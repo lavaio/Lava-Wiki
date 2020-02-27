@@ -1,6 +1,6 @@
 # 参考链接汇总
 
-·Lava官方网站（中文版）：
+* Lava官方网站（中文版）：
 
 <https://www.lavatech.org/>
 
