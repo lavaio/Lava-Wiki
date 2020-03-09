@@ -1,82 +1,41 @@
-# P盘教程
+## 概念介绍  
+“P盘”是Plotting的俗称，指生成Plot文件并填入硬盘的过程。Plot文件是Poc挖矿所必须的基础数据，矿工的硬盘空余容量越大，即可填入更多Plot文件，增加成功出块的概率。如果您想参与Lava挖矿，必须在挖矿前使用由LAVA自行研发的P盘软件HyperPlotter预先完成P盘工作。
+## 步骤一：获取publickeyid 
+首先，您需要更新全节点钱包至v0.4.1版本（包括lavad和lava-cli）。在新版本全节点中，使用getmineraddress命令获取您的pubkeyid。pubkeyid是使用您的私钥生成的唯一身份辨识符，用以代替旧标准中的Plot ID:  
+![image](https://note.youdao.com/yws/api/personal/file/B61E0DAFAC4D4256A184835DBC5ED789?method=download&shareKey=55a680529000a7117f8554781df313c7) 
 
-## 概念介绍
+## 步骤二：下载p盘软件  
+HyperPlotter现已上线LAVA官网，其中包含 2个版本的HyperPlotter，版本v0.1.2适用于PoC2协议P盘，版本v0.2.2适用于PoC2+协议P盘。下载地址：https://www.lavatech.org/zh/poc2Upgrade  
+## 步骤三：启动p盘软件  
+### 每台p盘机器运行一份P盘软件  
+1.解压 HyperPlotter-x64-all.zip，进入poc2+v0.2.2文件夹。  
+2.参数配置，右击runplotter.bat，选择编辑，如下：  
+![image](https://note.youdao.com/yws/api/personal/file/20C5002717D14990804D23B662A00253?method=download&shareKey=d36777d3ed54c4e9142d6af3936a785e)  
 
-P盘是`Plotting`的俗称，指生成`Plot文件`并填入硬盘的过程。`Plot文件`是PoC挖矿所必须的基础数据，矿工的硬盘空余容量越大，即可填入更多`Plot文件`，增加成功出块的概率。如果您想参与Lava挖矿，必须在挖矿前预先完成P盘工作。
+![image](https://note.youdao.com/yws/api/personal/file/2B6DC4CAEA2B4F2F9FA6F93E474672C8?method=download&shareKey=77328fa15200cf3eeb52bd91a7cb4cf0)  
+3.配置好后，运行p盘软件：  
+![image](https://note.youdao.com/yws/api/personal/file/FA4D97320BB64B6DA7C0F9691AAF896E?method=download&shareKey=dad6382de37bd42565592fafefe84731)  
+4.p盘完成后会显示如下图所示界面，如果没出现表示P盘任务未完成，重新执行第3步:  
+![image](https://note.youdao.com/yws/api/personal/file/BDF759FD6CCE471FB25F185BD114231A?method=download&shareKey=b1fdda7717f55376b96a4233ed0de6d2)  
+### 多实例运行  
+1.解压HyperPlotter-x64-all.zip，进入poc2+v0.2.2文件夹。  
+2.参数配置，复制runplotter.bat多份，并重命名，每个P盘任务一个文件，如下配置了两个P盘任务：  
+![image](https://note.youdao.com/yws/api/personal/file/AC336B05E1BC4607B6947B82E93F7720?method=download&shareKey=294e43494696c161d08dbbcba9b43b38)  
+3.分别编辑两个文件的参数，注意：硬盘列表不要有重复，内存均匀分配，保证系统有足够的空闲内存可以使用:  
+![image](https://note.youdao.com/yws/api/personal/file/CCC163EC2C8648758D9C4D17EA40361E?method=download&shareKey=162993247a06e22732e20a02febb7acd)  
 
-## 步骤一：下载P盘软件
-
-我们推荐下载免费P盘软件TurboPlotter的最新版本，下载地址：[https://blackpawn.com/tp/](https://blackpawn.com/tp/)
-
-该软件的免费版仅支持同时P一块盘；
-
-付费版本（PRO版本以及UNLIMITED版本）则可以支持同时P更多盘，具体性能请参考blackpawn官网说明（以下为截图，仅供参考）。
-
-用户请根据个人需求选择并下载。
-
-![](../.gitbook/assets/img1.png)
-
-_下载链接参考_：
-
-PRO版：[https://www.kuangjiwan.com/goods-58.html](https://www.kuangjiwan.com/goods-58.html)
-
-UNLIMITED版：[https://www.kuangjiwan.com/goods-60.html](https://www.kuangjiwan.com/goods-60.html)
-
-## 步骤二：启动P盘软件
-
-第一次打开TurboPlotter时，界面会提示是否已有`Plot文件`。对于第一次使用并P盘的用户，请选择No。
-
-![](../.gitbook/assets/img2.png)
-
-在进行P盘前，软件会要求用户填写“address”或“account ID”，此处实际是指您的`Plot ID`。请正确填写您准备好的`Plot ID`；如果没有准备，请跳转后一步骤准备Plot ID。
-
-![](../.gitbook/assets/img3.png)
-
-## 步骤三：生成Plot ID
-
-用户可以在全节点钱包内自行生成`Plot ID`。
-
-欲获取Lava全节点钱包，请前往Lava官网\([www.lavatech.org](https://github.com/kbroflovski21/Lava-Wiki/tree/c03583a72be36d99622a8cdf299afba2bb5c3878/mining/www.lavatech.org)\)顶部的下载栏目选择适用的环境版本进行下载。
-
-运行全节点钱包（请先确认lavad成功同步到区块链），输入命令:
-
-```text
-.\lava-cli.exe -rpcuser=test -rpcpassword=test getmineraddress
-```
-
-![](../.gitbook/assets/img4.png)
-
-Lava-cli 会返回 `address`和 `plot id`两个数据。`address`就是用于挖矿并接受出块奖励的地址，`Plot ID`为对应此地址的Plot ID。
-
-## 步骤四：P盘参数设定
-
-在上文步骤二提及的界面中输入`Plot ID`后，就可以进入P盘主界面。
-
-![](../.gitbook/assets/img5.png)
-
-`Processor`选项: 请选择使用CPU或GPU进行P盘。我们推荐使用性能优秀的GPU进行P盘，可大幅提升P盘效率。
-
-`SSD path`选项: 仅适用于SSD（固态硬盘）的情况，如果您使用固态硬盘存放Plot文件，则在此选项下填写存放路径，否则不需理会。
-
-`Target disk path`选项: 对于非SSD的情况，请在此填写P盘的目标路径（即存放Plot文件的位置）。对于免费版，软件仅支持单个路径。
-
-`Start nonce`选项： 默认从0开始，如无特殊要求可直接选择自动模式（automatic）。Choose from file 表示继续P上次暂停的文件。
-
-![](../.gitbook/assets/img6.png)
-
-`Max file size`选项：定义您想要生成的单个Plot文件的体积；默认情况下软件会根据目标盘的可用剩余空间自适配。但我们建议不要超过1T，以防因P盘意外中断导致重新P盘耗时过多。
-
-`RAM to use`选项：显示可用于P盘的系统内存。
-
-## 步骤五：开始P盘
-
-![](../.gitbook/assets/img7.png)
-
-完成以上设定后，点击Start plotting就可以开始P盘了。
-
-P盘中途如想暂停P盘，可点击pause（暂停）按钮 `（警告：P盘程序可以暂停，但是不能退出。如果退出程序再进入，只能重新开始P盘。一般情况下，我们建议不要随意中断P盘进程。）`
-
-![](../.gitbook/assets/img8.png)
-
-开始P盘后，程序显示以上界面，展示计算nonce和写入硬盘的速度，以及预计的剩余时间。
+![image](https://note.youdao.com/yws/api/personal/file/56DAA64714A44706A77525AA00A28013?method=download&shareKey=0ac23fd987f1755fd7fb3e7ea6181a84)  
+4.分别运行p盘任务：  
+![image](https://note.youdao.com/yws/api/personal/file/8D350B38DE74455A824484CDAD09DA55?method=download&shareKey=0d43b8ee55d9eda578fe5a1758ab431e)  
+5.P盘完成后会显示如下图所示界面，如果没出现表示P盘任务未完成，重新执行第4步：  
+![image](https://note.youdao.com/yws/api/personal/file/18BF44F51CA84B96BF155864AE08F401?method=download&shareKey=8603cf7338f341037ea22b9ffbf4e018)  
+### 以管理员身份运行  
+1.右击runplotter.bat，选择以管理员方式运行。  
+2.右击 runplotter.bat，选择创建快捷方式，创建启动脚本的快捷方式，右击刚创建的快捷方式：  
+![image](https://note.youdao.com/yws/api/personal/file/8F825F2933ED4C29B1453E19ACDBB2A3?method=download&shareKey=39f529a71fc92f135d3059a75b0a350f)  
+3.打开属性窗口，如下，单击高级按钮:  
+![image](https://note.youdao.com/yws/api/personal/file/17ED5FB4F35C4D9E9A0E7C5BC726991E?method=download&shareKey=3b2323999dccc00656216785c311dd3f)  
+4.打开高级属性设置，如下钩选用管理员身份运行:  
+![image](https://note.youdao.com/yws/api/personal/file/02BFF5BBD59846DDB44FA2CB165F2F8D?method=download&shareKey=26992029a010a23a76bee2928b1982b3)  
+最后确定，完成设置，后面即可以直接双击快捷方式来运行P盘任务；每个脚本单独按上面的步骤设置快捷方式即可。
 
