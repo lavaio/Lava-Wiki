@@ -8,19 +8,19 @@
 
 目前，Lava官方网站提供以下所列下载项目：
 
-·Linux全节点钱包
+* Linux全节点钱包
 
-·Windows全节点钱包
+* Windows全节点钱包
 
-·Mac OS全节点钱包
+* Mac OS全节点钱包
 
-·Windows轻钱包
+* Windows轻钱包
 
-·Windows GUI全节点钱包（图形界面版本的全节点钱包）
+* Windows GUI全节点钱包（图形界面版本的全节点钱包）
 
-·Mac OS GUI全节点钱包（图形界面版本的全节点钱包）
+* Mac OS GUI全节点钱包（图形界面版本的全节点钱包）
 
-·Android手机钱包（轻钱包）
+* Android手机钱包（轻钱包）
 
-·Lava Miner（Lava挖矿终端）
+* Lava Miner（Lava挖矿终端）
 

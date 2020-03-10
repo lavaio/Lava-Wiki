@@ -20,29 +20,29 @@ Lava在充分吸收已有项目所展现的智慧与经验之基础上，结合�
 
 ## 了解更多…
 
-·**Lava白皮书**详细阐释了PoC共识的基本原理与过程：
+* **Lava白皮书**详细阐释了PoC共识的基本原理与过程：
 
-<https://www.lavatech.org/pdf>
+    <https://www.lavatech.org/pdf>
 
-·BurstWiki对PoC概念的解释：
+* BurstWiki对PoC概念的解释：
 
-<https://burstwiki.org/en/proof-of-capacity/>
+    <https://burstwiki.org/en/proof-of-capacity/>
 
-·Busrtcoinist对PoC共识过程与优点的总结：
+* Busrtcoinist对PoC共识过程与优点的总结：
 
-<https://burstcoin.ist/2017/10/16/the-burst-mining-process-explained/>
+    <https://burstcoin.ist/2017/10/16/the-burst-mining-process-explained/>
 
-·Lava社区为小白解读PoC原理：
+* Lava社区为小白解读PoC原理：
 
-<https://www.8btc.com/article/472229>
+    <https://www.8btc.com/article/472229>
 
-·Lava社区对比PoC与PoW之优劣：
+* Lava社区对比PoC与PoW之优劣：
 
-<https://www.8btc.com/article/475470>
+    <https://www.8btc.com/article/475470>
 
-·Lava社区提供关于PoC与硬盘挖矿概念的辨析：
+* Lava社区提供关于PoC与硬盘挖矿概念的辨析：
 
-<https://www.8btc.com/article/478136>
+    <https://www.8btc.com/article/478136>
 
 
 
