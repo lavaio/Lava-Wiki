@@ -8,11 +8,15 @@
         "-lunr", 
         "-search", 
         "search-pro",
-        "custom-favicon"
+        "favicon-absolute"
     ],
     "pluginsConfig": {
-        "favicon": "./images/favicon.ico"
+        "favicon-absolute":{
+            "favicon": "/favicon.ico",
+            "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png"
+        }
     }
+
 }
 
     
