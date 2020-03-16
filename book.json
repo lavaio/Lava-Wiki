@@ -1,0 +1,19 @@
+{
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "mobi": "styles/mobi.css"
+    },
+    "plugins": [
+        "-lunr", 
+        "-search", 
+        "search-pro",
+        "custom-favicon"
+    ],
+    "pluginsConfig": {
+        "favicon": "./images/favicon.ico"
+    }
+}
+
+    
+    
