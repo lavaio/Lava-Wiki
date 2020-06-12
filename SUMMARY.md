@@ -44,4 +44,4 @@
 * [Windows轻钱包教程](wallet/wallet-winlightwallet.md)
 * [Android轻钱包教程](wallet/wallet-androidlightwallet.md)
 * [钱包FAQ](wallet/wallet-faq.md)
-* [CA资产测试网使用教程](wallet/CA.md)
+* [CA资产测试网使用教程](https://note.youdao.com/ynoteshare1/index.html?id=9246115d9ba0dccce75b9c2294bec2bb&type=note)
