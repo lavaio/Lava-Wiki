@@ -44,4 +44,4 @@
 * [Windows轻钱包教程](wallet/wallet-winlightwallet.md)
 * [Android轻钱包教程](wallet/wallet-androidlightwallet.md)
 * [钱包FAQ](wallet/wallet-faq.md)
-
+* [CA资产测试网使用教程]
